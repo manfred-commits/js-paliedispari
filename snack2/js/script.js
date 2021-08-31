@@ -18,10 +18,16 @@ function randomNumber(num1, num2){
 
 // 2.Creiamo una funzione che stabilisce se un numero è pari o dispari
 
-function isEvenOrOdd(){
+function isEvenOrOdd(num1){
+
+    if(num1%2==0){
+        return "even";
+    }
+    return "odd";
 
 }
-// 2.Creare un evento in cui vengono raccolti i dati inseriti dall'utente:
+
+// 3.Creare un evento in cui vengono raccolti i dati inseriti dall'utente:
 // dati sul numero inserito;
 // e se il numero che il computer genera sarà pari o dispari.
 
