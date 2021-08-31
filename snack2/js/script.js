@@ -9,7 +9,16 @@
 // 1. Scriviamo sempre in italiano i passaggi che vogliamo fare
 // 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 
-// 1.Creare un evento in cui vengono raccolti i dati inseriti dall'utente:
+// 1.Creare una funzione che genera un numero random tra due intervalli
+
+function randomNumber(num1, num2){
+    var result = Math.floor(Math.random() * (num2 - num1 + 1) + num1);
+}
+
+// 2.Creiamo una funzione che stabilisce se un numero è pari o dispari
+
+
+// 2.Creare un evento in cui vengono raccolti i dati inseriti dall'utente:
 // dati sul numero inserito;
 // e se il numero che il computer genera sarà pari o dispari.
 
