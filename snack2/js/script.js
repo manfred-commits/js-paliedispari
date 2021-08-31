@@ -42,5 +42,24 @@ function(){
     var userSelection = document.getElementById("even-odd").value;
     console.log(userSelection);
     
+    // variabile in cui andremmo ad immagazzinare il numero random generato dal computer
+    var computerNumber=randomNumber(1,5);
+
+    // 4. si effettua la somma dei due numeri come da consegna esercizio
+    var somma = userNumber + computerNumber;
+    console.log(computerNumber);
+    console.log(somma);
+
+    // 5. verifichiamo se la somma dei due numeri è un numero pari o dispari
+
+    console.log(isEvenOrOdd(somma));
+    var result = isEvenOrOdd(somma);
+
+    // 6.Dichiariamo chi ha vinto.
+    if(result==userSelection){
+        document.getElementById("result").innerHTML="Congratulazioni hai vinto!";
+    }else{
+        document.getElementById("result").innerHTML="Ritenta sarai più fortunato ;(";
+    }
 }
 )
