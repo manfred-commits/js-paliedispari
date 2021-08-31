@@ -28,6 +28,7 @@ function isPalindrome(word1){
 btnEnter.addEventListener("click",
 function(){
     var userWord = (document.getElementById("word").value).toLowerCase();
+    console.log(isPalindrome(userWord));
     if(isPalindrome(userWord)){
         document.getElementById("result").innerHTML="La tua parola è palindroma";
     }else{
