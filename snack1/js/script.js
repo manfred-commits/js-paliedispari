@@ -13,11 +13,22 @@
 // 1. creare un evento che fornisca, al click del bottone Invio, se la frase inserita dall'utente (nell'input) è palindroma
 
 var btnEnter = document.getElementById("enter");
+function isPalindrome(word1){
+    var reverse="";
+    for(var i = word1.length-1; i>=0; i--){
+        reverse+=word1[i];
+        console.log(reverse);
+    }
+    if(word1==reverse){
+        return true;
+    }
+    return false;
+}
 
 btnEnter.addEventListener("click",
 function(){
-    alert("hello!");
     var userWord = document.getElementById("word").value;
     console.log(userWord);
+    console.log(isPalindrome(userWord));
 }
 )
