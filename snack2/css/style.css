@@ -8,10 +8,27 @@ body{
     background-color: #ec8a0a;
     font-family: 'Open Sans', sans-serif;
 }
+h1,
 h2{
     color: white;
     text-align: center;
     padding: 10px 0 5px;
+}
+button{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+input.input-formatting,
+select.input-formatting{
+    padding: 7px 30px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
 }
 /* /general rules */
 
@@ -22,6 +39,7 @@ h2{
     border-radius: 10px;
     display: flex;
     margin: auto;
+    margin-bottom: 20px;
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
@@ -39,3 +57,11 @@ h2{
     text-align: center;
 }
 /* /container-form section of the page */
+#result{
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+}
+.shadow{
+    box-shadow: 2px 2px 8px 3px rgba(00,00,00,0.5);
+}

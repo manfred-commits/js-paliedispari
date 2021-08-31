@@ -61,9 +61,11 @@ function(){
     
         // 6.Dichiariamo chi ha vinto.
         if(result==userSelection){
+            document.getElementById("result").classList.add("shadow");
             document.getElementById("result").innerHTML="Congratulazioni hai vinto!";
         }else{
             document.getElementById("result").innerHTML="Ritenta sarai più fortunato ;(";
+            document.getElementById("result").classList.add("shadow");
         }        
     }else{
         alert("Inserisci valori ammessi riempiendo tutte le caselle!!");
