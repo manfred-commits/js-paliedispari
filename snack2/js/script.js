@@ -35,31 +35,38 @@ var btnEnter = document.getElementById("enter");
 
 btnEnter.addEventListener("click",
 function(){
-
+    
     // dati inseriti dall'utente
     var userNumber = parseInt(document.getElementById("number").value);
     console.log(userNumber);
     var userSelection = document.getElementById("even-odd").value;
     console.log(userSelection);
+
+    // validazione dei valori inseriti dall'utente
+
+    if(!isNaN(userNumber) && userNumber>0 && userSelection!=""){
+     
+        // variabile in cui andremmo ad immagazzinare il numero random generato dal computer
+        var computerNumber=randomNumber(1,5);
     
-    // variabile in cui andremmo ad immagazzinare il numero random generato dal computer
-    var computerNumber=randomNumber(1,5);
-
-    // 4. si effettua la somma dei due numeri come da consegna esercizio
-    var somma = userNumber + computerNumber;
-    console.log(computerNumber);
-    console.log(somma);
-
-    // 5. verifichiamo se la somma dei due numeri è un numero pari o dispari
-
-    console.log(isEvenOrOdd(somma));
-    var result = isEvenOrOdd(somma);
-
-    // 6.Dichiariamo chi ha vinto.
-    if(result==userSelection){
-        document.getElementById("result").innerHTML="Congratulazioni hai vinto!";
+        // 4. si effettua la somma dei due numeri come da consegna esercizio
+        var somma = userNumber + computerNumber;
+        console.log(computerNumber);
+        console.log(somma);
+    
+        // 5. verifichiamo se la somma dei due numeri è un numero pari o dispari
+    
+        console.log(isEvenOrOdd(somma));
+        var result = isEvenOrOdd(somma);
+    
+        // 6.Dichiariamo chi ha vinto.
+        if(result==userSelection){
+            document.getElementById("result").innerHTML="Congratulazioni hai vinto!";
+        }else{
+            document.getElementById("result").innerHTML="Ritenta sarai più fortunato ;(";
+        }        
     }else{
-        document.getElementById("result").innerHTML="Ritenta sarai più fortunato ;(";
+        alert("Inserisci valori ammessi riempiendo tutte le caselle!!");
     }
 }
 )
