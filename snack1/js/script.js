@@ -31,7 +31,7 @@ function(){
     if(isNaN(userWord)){
         console.log(isPalindrome(userWord));
         if(isPalindrome(userWord)){
-            document.getElementById("result").innerHTML="La tua parola è palindroma";
+            document.getElementById("result").innerHTML="La tua parola è Palindroma";
         }else{
             document.getElementById("result").innerHTML="La tua parola NON è palindroma";
         }

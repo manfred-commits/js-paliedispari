@@ -10,5 +10,47 @@ body{
 }
 h2{
     text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+button{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+input.input-formatting{
+    padding: 7px 30px;
+    margin: 10px 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
 }
 /* /general rules */
+/* sezione container-form */
+.container-form{
+    width: 60%;
+    box-shadow: 2px 2px 8px 3px rgba(00,00,00,0.5);
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+.number-container{
+    width: 100%;
+    text-align: center;
+}
+/* /sezione container-form */
+h2 span#result{
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 8px 3px rgba(00,00,00,0.5);
+    border-radius: 10px;
+}

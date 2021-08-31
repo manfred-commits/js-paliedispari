@@ -18,13 +18,15 @@
         <section>
             <h2>Verifica se una parola è Palindroma</h2>
             <div class="container-form">
-                <label for="word">Inserisci parola da controllare:</label><br>
-                <input id="word" type="text" name="word">
+                <div class="number-container">
+                    <label for="word">Inserisci la parola da verificare:</label>
+                    <input class="input-formatting" id="word" type="text" name="word">
+                </div>
+                <button id="enter">Invio</button>
             </div>
-            <button id="enter">Invio</button>
         </section>
         <section>
-            <h2>La tua parola è: <br><span id="result"></span></h2>
+            <h2><span id="result"></span></h2>
         </section>
        <script src="./js/script.js"></script> 
     </body>
