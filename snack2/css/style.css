@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* general rules */
+body{
+    background-color: #ca790e;
+    font-family: 'Open Sans', sans-serif;
+}
+/* /general rules */
