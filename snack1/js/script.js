@@ -28,11 +28,15 @@ function isPalindrome(word1){
 btnEnter.addEventListener("click",
 function(){
     var userWord = (document.getElementById("word").value).toLowerCase();
-    console.log(isPalindrome(userWord));
-    if(isPalindrome(userWord)){
-        document.getElementById("result").innerHTML="La tua parola è palindroma";
+    if(isNaN(userWord)){
+        console.log(isPalindrome(userWord));
+        if(isPalindrome(userWord)){
+            document.getElementById("result").innerHTML="La tua parola è palindroma";
+        }else{
+            document.getElementById("result").innerHTML="La tua parola NON è palindroma";
+        }
     }else{
-        document.getElementById("result").innerHTML="La tua parola NON è palindroma";
+        alert("Inserisci una frase valida!");
     }
 }
 )
