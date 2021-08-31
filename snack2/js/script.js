@@ -35,6 +35,12 @@ var btnEnter = document.getElementById("enter");
 
 btnEnter.addEventListener("click",
 function(){
+
+    // dati inseriti dall'utente
+    var userNumber = parseInt(document.getElementById("number").value);
+    console.log(userNumber);
+    var userSelection = document.getElementById("even-odd").value;
+    console.log(userSelection);
     
 }
 )
