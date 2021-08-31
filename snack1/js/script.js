@@ -27,8 +27,11 @@ function isPalindrome(word1){
 
 btnEnter.addEventListener("click",
 function(){
-    var userWord = document.getElementById("word").value;
-    console.log(userWord);
-    console.log(isPalindrome(userWord));
+    var userWord = (document.getElementById("word").value).toLowerCase();
+    if(isPalindrome(userWord)){
+        document.getElementById("result").innerHTML="La tua parola è palindroma";
+    }else{
+        document.getElementById("result").innerHTML="La tua parola NON è palindroma";
+    }
 }
 )
