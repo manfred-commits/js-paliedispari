@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* general rules */
+body{
+    background-color: #33ec0a;
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    text-align: center;
+}
+/* /general rules */
