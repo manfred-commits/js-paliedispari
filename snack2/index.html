@@ -7,6 +7,28 @@
         <title>Document</title>
     </head>
     <body>
+        <section>
+            <div class="container-form">
+                <h2>Man vs machine, chi vincerà?</h2>
+                <p>Regole del gioco: <br> 1.Inserisci un numero che va da 1 a 5 <br> 2. Decidi se pensi che il computer darà un numero pari o dispari. <br> Il computer, a questo punto, genererà un numero random da sommare al numero da te scelto (sempre tra 1 e 5) che potra essere pari o dispari.</p>
+                <h3>Vinci se indovini che tipo di numero verrà generato!</h3>
+                <div class="number-container">
+                    <label for="number">Inserisci un numero da 1 a 5:</label><br>
+                    <input id="number" type="number" name="number" max=5 min=1>
+                </div>
+                <p>Tenta la sorte e decidi se per te, il numero che verrà calcolato, sarà Pari o Dispari. </p>
+                <div class="select-container">
+                    <select name="evenOdd" id="even-odd">
+                        <option value="" disabled selected>Scegli tra pari o dispari</option>
+                        <option value="even">Pari</option>
+                        <option value="odd">Dispari</option>
+                    </select>
+                </div>
+            </div>
+            <button id="enter">Invio</button>
+        </section>
+        <h2 id="result"></h2>
+        
        <script src="./js/script.js"></script> 
     </body>
 </html>
