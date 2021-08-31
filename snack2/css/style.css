@@ -5,7 +5,37 @@
 }
 /* general rules */
 body{
-    background-color: #ca790e;
+    background-color: #ec8a0a;
     font-family: 'Open Sans', sans-serif;
 }
+h2{
+    color: white;
+    text-align: center;
+    padding: 10px 0 5px;
+}
 /* /general rules */
+
+/* container-form section of the page */
+.container-form{
+    width: 80%;
+    box-shadow: 2px 2px 8px 3px rgba(00,00,00,0.5);
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+}
+.container-form .form-content h3{
+    font-size: 20px;
+    padding: 10px 0 5px;
+    border-bottom: 2px solid rgb(194, 194, 194);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container-form .form-content .select-container, 
+.container-form .form-content .number-container{
+    text-align: center;
+}
+/* /container-form section of the page */
